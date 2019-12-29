@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-sm-12">
+            <form action="{% url 'create' %}">
+                <div class="card">
+                    <div class="card-body">
+                        <input class="form-control m-2" type="text"  name="title" placeholder="제목" required>
+                        <textarea class="form-control m-2" name="body" cols="30" rows="10" placeholder="본문" reqired></textarea>    
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <input class="btn btn-sm btn-outline-secondary m-2" type="submit" value="완료">
+                </div>
+            </form>
+        </div>
+
+    </div>
+       
+{% endblock %}
